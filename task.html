@@ -1,0 +1,57 @@
+
+<div class="task-page">
+  	<div class="task-header">
+  		<div class="task-title">
+	  		{{task.operation.name}}: Insecticide input on some particular fields
+	  	</div>
+		  	<div class="task-date">
+		  		{{task.endTime | date: 'dd.MM.yyyy'}}
+		  	</div>	
+
+	  	<div class="clearfix"></div>
+  	</div>
+  	<div class="task-start-time"></div>
+
+  		<div class="task">
+  			<div class="task-img"><img src="../img/field.png" alt=""></div>
+  			<div class="task-text">
+  				<span>Field:</span> {{task.operation.field.name}}
+  			</div>
+  		</div>
+  		<div class="task">
+  			<div class="task-img"><img src="../img/operation.png" alt=""></div>
+  			<div class="task-text">
+  				<span>Operation:</span> {{task.operation.field.tasks[0].taskName}}, {{task.operation.field.tasks[1].taskName}}
+  			</div>
+  		</div>
+  		<div class="task">
+  			<div class="task-img"><img src="../img/vehicle.png" alt=""></div>
+  			<div class="task-text">
+  				<span>Vehicle:</span> {{task.operation.vehicle.vehicleType.name}}
+  			</div>
+  		</div>
+  		<div class="task">
+  			<div class="task-img"><img src="../img/materials.png" alt=""></div>
+  			<div class="task-text">
+  				<span>Materials:</span> {{task.operation.field.tasks[0].materials}}
+  			</div>
+  		</div>
+  		<div class="task">
+  			<div class="task-img"><img src="../img/from.png" alt=""></div>
+  			<div class="task-text">
+  				<span>From:</span> {{task.org.name}}
+  			</div>
+  		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="task-note">
+			<span>Notes:</span> Please do the spraying on Top field today
+		</div>
+
+    <div class="add-bt">
+      <a href="#">Add task to eFarm Pilot</a>
+    </div>
+  </div>
+
+  <!--     <div class="task-text"  ng-init="limit = 20;"> -->

@@ -1,0 +1,14 @@
+<div class="app">
+    <h1>{{tasksTitle}}</h1>
+    <ul>
+
+	<li class="choose-task" ng-repeat="task in tasks">
+		<a href="#/task/{{task.id}}">
+		   	<div class="choose-task-img"></div>
+		   	<div class="choose-task-text">My Task 0{{$index + 1}}</div>
+		   	<div class="clearfix"></div>
+		</a>
+	</li>
+
+    </ul>
+</div>
